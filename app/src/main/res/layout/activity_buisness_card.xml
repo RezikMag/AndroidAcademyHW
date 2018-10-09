@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        tools:context=".BuisnessCardActivity">
+
+        <ImageView
+
+            android:id="@+id/img_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/my_photo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/my_photo" />
+
+        <ImageView
+            android:id="@+id/icon_key_info"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/img_photo"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/icon_android"
+            android:src="@drawable/android_icon" />
+
+        <TextView
+            android:id="@+id/tv_key_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_photo"
+            android:layout_margin="8dp"
+            android:layout_toEndOf="@+id/icon_key_info"
+            android:text="@string/key_info"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/icon_key_info"
+            android:layout_margin="8dp"
+            android:text="@string/description"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_description"
+            android:layout_margin="8dp"
+            android:hint="@string/enter_a_message" />
+
+        <Button
+            android:id="@+id/btn_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/edit_text_message"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:text="@string/send_message"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/btn_vk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_send_message"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/vk" />
+
+        <ImageButton
+            android:id="@+id/btn_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_send_message"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/facebook"
+            android:layout_toEndOf="@+id/btn_vk" />
+    </RelativeLayout>
+</ScrollView>
