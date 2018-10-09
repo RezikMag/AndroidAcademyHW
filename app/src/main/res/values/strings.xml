@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Rizvan Magaramov</string>
+    <string name="my_photo">My Photo</string>
+    <string name="key_info">Android Student</string>
+    <string name="icon_android">Icon Android</string>
+    <string name="description">Rizvan Magaramov is a student of android Academy Moscow. He Begins to
+    study Android development in 2017. Now he works on understanding some androidlibraries like rxJava
+    and its combinations with networking, database and so on.
+    </string>
+    <string name="enter_a_message">Enter a message..</string>
+    <string name="send_message">send message</string>
+    <string name="subject">Message from card</string>
+    <string name="vk_url">https://vk.com/maga_ra_mov</string>
+    <string name="fb_url">https://www.facebook.com/profile.php?id=100013518246480</string>
+    <string name="adress">androidAcademy@msk.com</string>
+</resources>
